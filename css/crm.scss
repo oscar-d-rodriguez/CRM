@@ -33,7 +33,7 @@ $light-gray: #ccc;
 html{
 	font-size:62.5% !important;
 	.s4-ca{
-		margin-left:0;
+		margin-left:0; 
 	} 
 	body{
 		#header{
@@ -101,7 +101,7 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 			* {
 				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-				box-sizing: border-box;         /* Opera/IE 8+ */
+				box-sizing: border-box;box-sizing: border-box;         /* Opera/IE 8+ */
 			}
 			background:url("https://at.avanade.com/sites/CustomerRecordsManagement/Style Library/css/images/bg.png") #EFEFEF repeat-x scroll top right; border-bottom:1px solid #ddd;
 			text-shadow: none !important;
