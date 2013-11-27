@@ -189,6 +189,13 @@ html body .rm-layout .side-bar {
   float: right;
   padding: 0;
 }
+html body .rm-layout .side-bar .banner-sidebar {
+  margin-top: 20px;
+}
+html body .rm-layout .side-bar .banner-sidebar .ms-rtestate-field > img {
+  width: 100%;
+  max-height: 200px;
+}
 html body .rm-layout .side-bar ul.dfwp-list li .link-item a:before {
   content: "> ";
   text-decoration: none !important;
@@ -306,12 +313,6 @@ html body .rm-layout .tiles .green img[id^="MSOImageWebPart"] {
 html body .rm-layout .bottom-content {
   position: relative;
 }
-html body .rm-layout .bottom-content ul {
-  background-color: #E2E2E2;
-}
-html body .rm-layout .bottom-content ul li {
-  border-bottom: 4px solid #FFFFFF;
-}
 html body .rm-layout .bottom-content .groupheader {
   text-align: center;
   font-size: 14px;
@@ -327,12 +328,24 @@ html body .rm-layout .bottom-content .customer-records .dfwp-list, html body .rm
   list-style-position: inside;
   font-size: 20px;
   font-weight: bold;
+  padding-right: 0px;
 }
 html body .rm-layout .bottom-content .customer-records .dfwp-list li, html body .rm-layout .bottom-content .temporary-documents .dfwp-list li {
   list-style-type: decimal;
+  padding-left: 2%;
+  background-color: #E2E2E2;
+  border-bottom: 4px solid #FFFFFF;
+  padding: 10px;
+}
+html body .rm-layout .bottom-content .customer-records .dfwp-list li .item, html body .rm-layout .bottom-content .temporary-documents .dfwp-list li .item {
+  padding: 0px;
+  display: inline-block;
+}
+html body .rm-layout .bottom-content .customer-records .dfwp-list li .item a, html body .rm-layout .bottom-content .temporary-documents .dfwp-list li .item a {
+  color: #333333;
 }
 html body .rm-layout .bottom-content .temporary-documents .dfwp-list {
-  margin-left: 10px;
+  margin-left: 10px !important;
 }
 html body .rm-layout .bottom-content .temporary-documents .dfwp-list li {
   list-style-type: none;
