@@ -55,6 +55,9 @@ html body .breadcrumbnav {
 html body .breadcrumbnav a, html body .breadcrumbnav a:link, html body .breadcrumbnav a:visited {
   color: #777 !important;
 }
+html body .breadcrumbnav a.breadcrumbCurrentNode:link, html body .breadcrumbnav a.breadcrumbCurrentNode:visited, html body .breadcrumbnav a.breadcrumbCurrentNode:hover {
+  color: #D10072 !important;
+}
 html body .h1-homepage {
   background: #CF0072 !important;
 }
