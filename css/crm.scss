@@ -48,7 +48,9 @@ html{
 			float: left;
 			a, a:link, a:visited{color: #777 !important;
 			}
+			a.breadcrumbCurrentNode:link, a.breadcrumbCurrentNode:visited, a.breadcrumbCurrentNode:hover{color:#D10072 !important}
 		}
+
 		.h1-homepage{
 	  		background: #CF0072 !important;
 		}
