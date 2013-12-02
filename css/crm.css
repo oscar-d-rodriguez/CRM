@@ -21,9 +21,6 @@
 88        88   `"Ybbd8"'  `"8bbdP"Y8   `"8bbdP"Y8   `"Ybbd8"'  88          
                                                                                                                                                       
 *******************************************************************************/
-html {
-  font-size: 62.5% !important;
-}
 html .s4-ca {
   margin-left: 0;
 }
@@ -54,6 +51,9 @@ html body .breadcrumbnav {
 }
 html body .breadcrumbnav a, html body .breadcrumbnav a:link, html body .breadcrumbnav a:visited {
   color: #777 !important;
+}
+html body .breadcrumbnav a.breadcrumbCurrentNode:link, html body .breadcrumbnav a.breadcrumbCurrentNode:visited, html body .breadcrumbnav a.breadcrumbCurrentNode:hover {
+  color: #D10072 !important;
 }
 html body .h1-homepage {
   background: #CF0072 !important;
@@ -90,6 +90,9 @@ html body table#inner-table {
 }
 html body .HomeLayout h2 {
   text-align: center;
+}
+html body .SupportResources .tiles a, html body .SupportResources .tiles p {
+  font-size: 15px;
 }
 html body .rm-layout {
   background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style Library/css/images/bg.png") #efefef repeat-x scroll top right;
@@ -243,12 +246,87 @@ html body .rm-layout .subcol-inner {
   background-image: none;
 }
 html body .rm-layout .slider {
-  margin-bottom: 4%;
+  margin: 4% 0;
+  position: relative;
+}
+html body .rm-layout .slider ul.dfwp-column.dfwp-list {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+html body .rm-layout .slider .description {
+  background-color: rgba(207, 0, 114, 0.9);
+  color: #FFFFFF;
+  height: 85%;
+  left: 3%;
+  padding: 7% 3% 3%;
+  position: absolute;
+  top: 7%;
+  width: 35%;
+}
+html body .rm-layout .slider .description h1, html body .rm-layout .slider .description a {
+  color: white;
+}
+html body .rm-layout .slider .description a {
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/read-more.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  margin-top: 22px;
+  padding-right: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+html body .rm-layout #nav {
+  /* you can add positioning properties here if needed */
+  width: auto;
+  /* change as required */
+  padding: 0;
+  height: 14px;
+  z-index: 999;
+  right: 4%;
+  bottom: 7%;
+  position: absolute;
+}
+html body .rm-layout #nav a {
+  display: block;
+  float: left;
+  width: 12px;
+  height: 12px;
+  text-indent: -999em;
+  background: #fff;
+  border-radius: 10px;
+  /* must be the same as width and height */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 0 1px 1px #707173;
+  /* border color */
+  margin-right: 5px;
+  box-shadow: none;
+}
+html body .rm-layout #nav a {
+  background: #c0c0c0;
+  /* optional: color when hovered */
+}
+html body .rm-layout #nav a.activeSlide {
+  background: none;
+  border: solid 2px #D10072;
 }
 html body .rm-layout .tiles {
   overflow: hidden;
   clear: both;
   margin-bottom: 4%;
+  color: white;
+}
+html body .rm-layout .tiles div div {
+  word-break: break-all;
+}
+html body .rm-layout .tiles div div a {
+  line-height: 1em;
+}
+html body .rm-layout .tiles a, html body .rm-layout .tiles h2 {
+  color: white;
 }
 html body .rm-layout .tiles ul.dfwp-list li .link-item a,
 html body .rm-layout .tiles .groupheader.item.medium {
