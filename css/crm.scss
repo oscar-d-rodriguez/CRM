@@ -1,17 +1,17 @@
 @charset "UTF-8";
-/******************************************************************************
-88        88              88                                                  
-88        88              88                                                  
-88        88              88                                                  
-88aaaaaaaa88   ,adPPYba,  88  8b,dPPYba,    ,adPPYba,  8b,dPPYba,  ,adPPYba,  
-88""""""""88  a8P_____88  88  88P'    "8a  a8P_____88  88P'   "Y8  I8[    ""  
-88        88  8PP"""""""  88  88       d8  8PP"""""""  88           `"Y8ba,   
-88        88  "8b,   ,aa  88  88b,   ,a8"  "8b,   ,aa  88          aa    ]8I  
-88        88   `"Ybbd8"'  88  88`YbbdP"'    `"Ybbd8"'  88          `"YbbdP"'  
-                              88                                              
-                              88            
-*******************************************************************************/
+/******************************************************************************                                                                           
+	I N D E X 
 
+	0.1 	B O D Y  
+ 	0.6 	B U T T O N S 
+ 	0.2 	L A Y O U T 
+ 	0.3 	S I D E B A R 
+ 	0.4 	S L I D E R
+ 	0.5 	T I L E S - G R I D 
+ 	0.6 	H O M E - B O T T O M - L I N K S
+ 	0.7 	B U T T O N S 
+
+*******************************************************************************/
 $light-gray: #ccc;
 	 $black: #000;
 	 $white: #fff;
@@ -20,15 +20,7 @@ $light-gray: #ccc;
   $padd10px: 10px;
 
 /******************************************************************************                                                                           
-88        88                                   88                          
-88        88                                   88                          
-88        88                                   88                          
-88aaaaaaaa88   ,adPPYba,  ,adPPYYba,   ,adPPYb,88   ,adPPYba,  8b,dPPYba,  
-88""""""""88  a8P_____88  ""     `Y8  a8"    `Y88  a8P_____88  88P'   "Y8  
-88        88  8PP"""""""  ,adPPPPP88  8b       88  8PP"""""""  88          
-88        88  "8b,   ,aa  88,    ,88  "8a,   ,d88  "8b,   ,aa  88          
-88        88   `"Ybbd8"'  `"8bbdP"Y8   `"8bbdP"Y8   `"Ybbd8"'  88          
-                                                                                                                                                      
+ 0.1 	B O D Y 
 *******************************************************************************/
 html{
 	.s4-ca{
@@ -83,18 +75,9 @@ html{
 		table#inner-table {
 		    width: 100%;
 		}
-/******************************************************************************                                                                       
-                                                             
-  ,ad8888ba,   88               88                       88  
- d8"'    `"8b  88               88                       88  
-d8'            88               88                       88  
-88             88   ,adPPYba,   88,dPPYba,   ,adPPYYba,  88  
-88      88888  88  a8"     "8a  88P'    "8a  ""     `Y8  88  
-Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88  
- Y8a.    .a88  88  "8a,   ,a8"  88b,   ,a8"  88,    ,88  88  
-  `"Y88888P"   88   `"YbbdP"'   8Y"Ybbd8"'   `"8bbdP"Y8  88  
-                                                             
-*******************************************************************************/
+		/******************************************************************************                                                                           
+		 0.2 	L A Y O U T 
+		*******************************************************************************/	
 		.HomeLayout{
 			h2{text-align: center;}
 		}
@@ -123,20 +106,7 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 		    h4,		  
 			h5,
 			h6{font-family:$segoe; font-size: 12px;}			
-			hr{background: #E2E2E2; display: block; height: 1px; margin: 4% 0; width: 100%;}
-
-/******************************************************************************                                                                       
-88                                                                       
-88                                                                ,d     
-88                                                                88     
-88           ,adPPYYba,  8b       d8   ,adPPYba,   88       88  MM88MMM  
-88           ""     `Y8  `8b     d8'  a8"     "8a  88       88    88     
-88           ,adPPPPP88   `8b   d8'   8b       d8  88       88    88     
-88           88,    ,88    `8b,d8'    "8a,   ,a8"  "8a,   ,a88    88,    
-88888888888  `"8bbdP"Y8      Y88'      `"YbbdP"'    `"YbbdP'Y8    "Y888  
-                             d8'                                         
-                            d8'                                          
-*******************************************************************************/		
+			hr{background: #E2E2E2; display: block; height: 1px; margin: 4% 0; width: 100%;}	
 			.content-information{
 				width: 75%;
 				float: left;
@@ -144,6 +114,10 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 				box-shadow: 0 0 4px #CCCCCC; 
 				background-color:#ffffff; min-height: 600px;
 			}
+
+			/******************************************************************************                                                                           
+			 0.3 	S I D E B A R 
+			*******************************************************************************/	
 			.side-bar{
 				width: 25%;
 				float: right;
@@ -190,12 +164,16 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 				.rm-layout .side-bar ul.dfwp-list li .link-item a:visited{ 
 					color: #009FD8;
 				}
+				.subcol-inner{
+					padding: 10px 20px;
+					width: 100%;
+					background-image:none;				
+				}
+
 			}
-			.subcol-inner{
-				padding: 10px 20px;
-				width: 100%;
-				background-image:none;				
-			}
+			/******************************************************************************                                                                           
+			 0.4 	S L I D E R
+			*******************************************************************************/	
 			.slider{
 				margin: 4% 0;
 				position:relative;
@@ -229,9 +207,8 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 					}
 				}			
 			}
-			#nav {
-			  /* you can add positioning properties here if needed */
-			  width: auto; /* change as required */
+			#nav {			  
+			  width: auto; 
 			  padding: 0;
 			  height: 14px;
 			  z-index: 999;
@@ -246,20 +223,23 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 			  height: 12px;
 			  text-indent: -999em;
 			  background: #fff;
-			  border-radius: 10px; /* must be the same as width and height */
+			  border-radius: 10px;
 			  -moz-border-radius: 10px;
 			  -webkit-border-radius: 10px;
-			  box-shadow: 0 0 1px 1px #707173; /* border color */
+			  box-shadow: 0 0 1px 1px #707173; 
 			  margin-right: 5px;
 			  box-shadow:none;
 			}
 			#nav a {
-			  background: #c0c0c0; /* optional: color when hovered */
+			  background: #c0c0c0;
 			}
 			#nav a.activeSlide {
 			  background:none;
 			  border:solid 2px #D10072;
 			}
+			/******************************************************************************                                                                           
+			 0.5 	T I L E S - G R I D 
+			*******************************************************************************/	
 			.tiles{
 			    overflow: hidden;
 			    clear: both;
@@ -346,6 +326,9 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 					}			    
 				}
 			}
+			/******************************************************************************                                                                           
+			 0.6 	H O M E - B O T T O M - L I N K S
+			*******************************************************************************/	
 			.bottom-content{
 				position: relative;
 				.groupheader{
@@ -414,16 +397,9 @@ Y8,        88  88  8b       d8  88       d8  ,adPPPPP88  88
 					}	
 				}
 			}
-/******************************************************************************                                                                     
-88888888ba                                                                      
-88      "8b                 ,d       ,d                                         
-88      ,8P                 88       88                                         
-88aaaaaa8P'  88       88  MM88MMM  MM88MMM  ,adPPYba,   8b,dPPYba,   ,adPPYba,  
-88""""""8b,  88       88    88       88    a8"     "8a  88P'   `"8a  I8[    ""  
-88      `8b  88       88    88       88    8b       d8  88       88   `"Y8ba,   
-88      a8P  "8a,   ,a88    88,      88,   "8a,   ,a8"  88       88  aa    ]8I  
-88888888P"    `"YbbdP'Y8    "Y888    "Y888  `"YbbdP"'   88       88  `"YbbdP"'  
-*******************************************************************************/	
+			/******************************************************************************                                                                           
+			 0.6 	B U T T O N S 
+			*******************************************************************************/		
 			a.green-button, a.blue-button{
 				float: left;
 			    padding:25px 10px;
