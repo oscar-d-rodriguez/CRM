@@ -96,7 +96,10 @@ html{
 			text-shadow: none !important;
 			color:$dark;						
 			p{font-family:$segoe; font-size:12px;}
-			ul{font-family:$segoe; margin-left: 2.5%;font-size:12px;font-family:$segoe;}
+			ul{
+				font-family:$segoe; margin-left: 2.5%;font-size:12px;font-family:$segoe; list-style-type: disc;
+				ul{ maring-left:2em; margin-top: 1em;}
+			}
 		    a:link, 
 		    a:visited,
 		    a:hover{font-family:$segoe; color:#009FD8; font-weight:400}
