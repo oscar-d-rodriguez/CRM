@@ -30,6 +30,9 @@ html body #header {
   position: relative;
   z-index: 1;
 }
+html body #s4-leftpanel {
+  display: none;
+}
 html body .breadcrumbnav {
   float: left;
 }
@@ -117,6 +120,11 @@ html body .rm-layout ul {
   margin-left: 2.5%;
   font-size: 12px;
   font-family: Segoe UI, Helvetica, Arial !important;
+  list-style-type: disc;
+}
+html body .rm-layout ul ul {
+  maring-left: 2em;
+  margin-top: 1em;
 }
 html body .rm-layout a:link,
 html body .rm-layout a:visited,
@@ -171,6 +179,9 @@ html body .rm-layout .side-bar {
   float: right;
   padding: 0;
 }
+html body .rm-layout .side-bar img {
+  width: 100% !important;
+}
 html body .rm-layout .side-bar .banner-sidebar {
   margin-top: 20px;
 }
@@ -206,11 +217,13 @@ html body .rm-layout .side-bar .groupheader {
 html body .rm-layout .side-bar ul.dfwp-list {
   margin: 0;
   padding-right: 0;
+  width: 100%;
 }
 html body .rm-layout .side-bar ul.dfwp-list div.item {
   overflow: hidden;
   padding-left: 0;
   padding-right: 0;
+  width: 100%;
 }
 html body .rm-layout .side-bar .rm-layout .side-bar ul.dfwp-list li .link-item a:link,
 html body .rm-layout .side-bar .rm-layout .side-bar ul.dfwp-list li .link-item a:hover,
@@ -229,6 +242,9 @@ html body .rm-layout .slider {
 html body .rm-layout .slider ul.dfwp-column.dfwp-list {
   padding: 0px;
   margin: 0px;
+  width: 100%;
+}
+html body .rm-layout .slider img {
   width: 100%;
 }
 html body .rm-layout .slider .description {
