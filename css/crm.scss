@@ -88,7 +88,141 @@ html{
 			a, p {
 			    font-size: 15px;
 			}
-		}	
+		}
+		.GenericLayout{
+			.et-tabrow{
+				overflow: hidden
+			}
+			.et-tab {
+			    background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat scroll right -107px rgba(0, 0, 0, 0);
+			    border: 0 none;
+			    color: #FFFFFF;
+			    display: block;
+			    float: left;
+			    font-family: "Segoe UI";
+			    font-size: 11px !important;
+			    font-weight: bold;
+			    height: 107px;
+			    margin-bottom: 15px;
+			    max-width: 124px;
+			    padding: 10px 19px 10px 38px;
+			    position: relative;
+			    text-align: left;
+			    white-space: pre-wrap;
+			    width: auto;
+			}
+			.et-activetab{ background-position:right -321px;}
+			.et-inactivetab{}
+			.et-separator{ background-color:transparent}
+			.et-tabrow{}
+			.et-offscreen{}
+			.content-information .ms-WPBorder{border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #CF0072; border-style: solid; border-width: 2px;}
+			.et-activetab:before {
+			    color: rgba(0, 0, 0, 0);
+			    content: ".";
+			    display: block;
+			    height: 107px;
+			    left: -36px;
+			    margin: 0 auto;
+			    opacity: 1;
+			    position: absolute;
+			    top: 0;
+			    width: 36px;
+			    z-index: 10;
+			    background:url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px; 
+			}
+		}
+		.RolesResponsabilities{
+			.responsabilities-chart{
+				margin: 4% 0 8%;
+				min-height: 253px;
+				position: relative;
+				.ms-WPHeader td, .ms-fakewptitle{
+					border-bottom:none;
+				}
+				.conract-leader,
+				.records-lead,
+				.engagement-team-member{
+					color: #666666;
+					float: left;
+					position: relative;
+					width: 31.5%;
+					z-index: 999;
+					padding: 1%;
+				}
+				.records-lead{
+					margin-top: 5%;
+				}
+				.engagement-team-member{
+					margin-top: 10%;
+				}
+				h2,b{
+					color: #333;
+				}
+				h3{
+					color: $white;
+					padding-top:0;
+					margin-top: 0;
+					margin-bottom: 14px;
+				}
+				img.chart-image{
+					position:absolute;
+					top: 0;
+					left:0;
+					max-width: 730px;
+				}	
+			}
+			.the-tabs{
+				.ms-wpContentDivSpace{
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				.ie-links{
+					list-style-image: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/ie-icon.png")
+				}
+    			.ie-links li{    
+					vertical-align:middle;    
+					margin-bottom:2px;
+					margin-left:12px
+				}
+				h2{
+					margin-top: 20px;
+				}
+				li{
+					 margin-bottom: 5px;
+					 list-style-type: none;
+				}
+				a.pdf:after{
+				    content: "";
+				    float: left;
+				    height: 26px;
+				    left: 13px;
+				    position: absolute;
+				    top: 9px;
+				    width: 21px;
+					background-image:url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/pdf-icon.png");	
+				}
+				a.pdf{
+					color: #FFFFFF !important;
+				    display: block;
+				    float: right;
+				    font-weight: bold !important;
+				    padding: 2% 4% 2% 6%;
+				    position: relative;
+				    width: auto;
+					background-color:#ff3300; /* Old browsers */
+						/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+						background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmMzMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYzAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+						background: -moz-linear-gradient(top,  #ff3300 1%, #cc0000 100%); /* FF3.6+ */
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ff3300), color-stop(100%,#cc0000)); /* Chrome,Safari4+ */
+						background: -webkit-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Chrome10+,Safari5.1+ */
+						background: -o-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Opera 11.10+ */
+						background: -ms-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* IE10+ */
+						background: linear-gradient(to bottom,  #ff3300 1%,#cc0000 100%); /* W3C */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3300', endColorstr='#cc0000',GradientType=0 ); /* IE6-8 */
+				}
+			}
+		}
 		.rm-layout {
 			* {
 				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -128,9 +262,6 @@ html{
 				width: 25%;
 				float: right;
 				padding:0;
-				img{
-					width: 100% !important;
-				}
 				.banner-sidebar{ 
 		        	margin-top:20px;
 		        	.ms-rtestate-field > img{
@@ -162,12 +293,10 @@ html{
 				ul.dfwp-list{ 
 					margin: 0; 
 					padding-right: 0;
-					width: 100%;
 					div.item {
 						overflow: hidden;
 						padding-left: 0;
 						padding-right: 0;
-						width: 100%;
 					}
 				}  	
 				.rm-layout .side-bar ul.dfwp-list li .link-item a:link, 
@@ -192,10 +321,13 @@ html{
 					padding:0px;
 					margin:0px;
 					width: 100%;
-				}
-				img{
-					width: 100%;
-				}
+					li{
+						width: 100%;
+						img{
+							width: 100% !important;
+						}
+					}
+				}							
 				.description{
 					background-color: rgba(207, 0, 114, 0.9);
 
