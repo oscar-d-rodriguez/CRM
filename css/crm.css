@@ -142,11 +142,11 @@ html body .GenericLayout .et-activetab:before {
   z-index: 10;
   background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px;
 }
-html body .GenericLayout .et-tab.et-inactivetab#Last {
-  background-position: right -428px;
+html body .GenericLayout .et-tabrow span + span + span + span + span + span {
+  background-position: right -428px  !important;
 }
-html body .GenericLayout .et-tab.et-activetab#Last {
-  background-position: right 0;
+html body .GenericLayout .et-tabrow span + span + span + span + span + span.et-activetab {
+  background-position: right 0px  !important;
 }
 html body .RolesResponsabilities .responsabilities-chart {
   margin: 4% 0 8%;

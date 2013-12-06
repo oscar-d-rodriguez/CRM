@@ -144,11 +144,12 @@ html{
 			    z-index: 10;
 			    background:url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px; 
 			}
-			.et-tab.et-inactivetab#Last {
-			    background-position: right -428px;
+			.et-tabrow span + span + span + span + span + span { 
+			    background-position: right -428px  !important;
 			}
-			.et-tab.et-activetab#Last {
-			    background-position: right 0;
+
+			.et-tabrow span + span + span + span + span + span.et-activetab { 
+			    background-position: right 0px  !important;
 			}
 		}
 		.RolesResponsabilities{
