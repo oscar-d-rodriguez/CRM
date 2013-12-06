@@ -22,6 +22,21 @@ html body {
    0.2 	L A Y O U T 
   *******************************************************************************/
 }
+html body .left-menu-custom ul li {
+  line-height: 2;
+  list-style-type: none;
+}
+html body .left-menu-custom ul li a {
+  color: #009FD8 !important;
+  text-decoration: none !important;
+}
+html body .left-menu-custom ul li a .menu-item-text:before {
+  content: "> ";
+  text-decoration: none !important;
+}
+html body .left-menu-custom ul li:hover {
+  color: #00719b !important;
+}
 html body #header {
   border-bottom: 1px solid #cccccc;
   -webkit-box-shadow: 0px 2px 2px 0px #cccccc;
@@ -96,7 +111,7 @@ html body .GenericLayout .et-tab {
   height: 107px;
   margin-bottom: 15px;
   max-width: 124px;
-  padding: 10px 19px 10px 38px;
+  padding: 10px 19px 10px 12px;
   position: relative;
   text-align: left;
   white-space: pre-wrap;
@@ -126,6 +141,12 @@ html body .GenericLayout .et-activetab:before {
   width: 36px;
   z-index: 10;
   background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px;
+}
+html body .GenericLayout .et-tab.et-inactivetab#Last {
+  background-position: right -428px;
+}
+html body .GenericLayout .et-tab.et-activetab#Last {
+  background-position: right 0;
 }
 html body .RolesResponsabilities .responsabilities-chart {
   margin: 4% 0 8%;
@@ -172,11 +193,25 @@ html body .RolesResponsabilities .the-tabs .ms-wpContentDivSpace {
 }
 html body .RolesResponsabilities .the-tabs .ie-links {
   list-style-image: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/ie-icon.png");
+  margin-left: 2.5%;
 }
 html body .RolesResponsabilities .the-tabs .ie-links li {
   vertical-align: middle;
   margin-bottom: 2px;
   margin-left: 12px;
+}
+html body .RolesResponsabilities .the-tabs ul {
+  margin-left: 1%;
+}
+html body .RolesResponsabilities .the-tabs input[type="checkbox"], html body .RolesResponsabilities .the-tabs input[type="radio"] {
+  float: left;
+  height: 20px;
+  margin-right: 10px;
+}
+html body .RolesResponsabilities .the-tabs p {
+  float: left;
+  line-height: normal;
+  width: 90%;
 }
 html body .RolesResponsabilities .the-tabs h2 {
   margin-top: 20px;
@@ -184,6 +219,7 @@ html body .RolesResponsabilities .the-tabs h2 {
 html body .RolesResponsabilities .the-tabs li {
   margin-bottom: 5px;
   list-style-type: none;
+  clear: both;
 }
 html body .RolesResponsabilities .the-tabs a.pdf:after {
   content: "";
@@ -254,7 +290,7 @@ html body .rm-layout * {
 }
 html body .rm-layout p {
   font-family: Segoe UI, Helvetica, Arial !important;
-  font-size: 12px;
+  font-size: 13px;
 }
 html body .rm-layout ul {
   font-family: Segoe UI, Helvetica, Arial !important;
@@ -379,9 +415,11 @@ html body .rm-layout .slider ul.dfwp-column.dfwp-list {
   padding: 0px;
   margin: 0px;
   width: 100%;
+  list-style-type: none;
 }
 html body .rm-layout .slider ul.dfwp-column.dfwp-list li {
   width: 100%;
+  list-style-type: none;
 }
 html body .rm-layout .slider ul.dfwp-column.dfwp-list li img {
   width: 100% !important;

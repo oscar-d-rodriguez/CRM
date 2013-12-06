@@ -27,6 +27,19 @@ html{
 		margin-left:0; 
 	} 
 	body{
+		.left-menu-custom ul li{
+			line-height:2;
+			list-style-type: none;
+			a{
+				color:#009FD8 !important; text-decoration:none !important;
+				.menu-item-text:before{
+					content:"> "; text-decoration:none !important;
+				} 
+			}
+			&:hover{
+				color:#00719B !important
+			}
+		}
 		#header{
 			border-bottom: 1px solid $light-gray;
 		    -webkit-box-shadow: 0px 2px 2px 0px $light-gray;
@@ -105,7 +118,7 @@ html{
 			    height: 107px;
 			    margin-bottom: 15px;
 			    max-width: 124px;
-			    padding: 10px 19px 10px 38px;
+			    padding:10px 19px 10px 12px;
 			    position: relative;
 			    text-align: left;
 			    white-space: pre-wrap;
@@ -130,6 +143,12 @@ html{
 			    width: 36px;
 			    z-index: 10;
 			    background:url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px; 
+			}
+			.et-tab.et-inactivetab#Last {
+			    background-position: right -428px;
+			}
+			.et-tab.et-activetab#Last {
+			    background-position: right 0;
 			}
 		}
 		.RolesResponsabilities{
@@ -170,27 +189,43 @@ html{
 					top: 0;
 					left:0;
 					max-width: 730px;
-				}	
+				}				
 			}
 			.the-tabs{
+
 				.ms-wpContentDivSpace{
 					margin-left: 0px;
 					margin-right: 0px;
 				}
 				.ie-links{
-					list-style-image: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/ie-icon.png")
+					list-style-image: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/ie-icon.png");
+					margin-left: 2.5%
 				}
     			.ie-links li{    
 					vertical-align:middle;    
 					margin-bottom:2px;
-					margin-left:12px
+					margin-left:12px;
 				}
+				ul{
+					margin-left: 1%;
+				}
+				input[type="checkbox"], input[type="radio"] {
+				    float: left;
+				    height: 20px;
+				    margin-right: 10px;
+				}
+				p{
+					 float: left;
+				    line-height: normal;
+				    width: 90%;
+				} 
 				h2{
 					margin-top: 20px;
 				}
 				li{
 					 margin-bottom: 5px;
 					 list-style-type: none;
+					 clear: both;
 				}
 				a.pdf:after{
 				    content: "";
@@ -211,15 +246,15 @@ html{
 				    position: relative;
 				    width: auto;
 					background-color:#ff3300; /* Old browsers */
-						/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-						background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmMzMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYzAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-						background: -moz-linear-gradient(top,  #ff3300 1%, #cc0000 100%); /* FF3.6+ */
-						background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ff3300), color-stop(100%,#cc0000)); /* Chrome,Safari4+ */
-						background: -webkit-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Chrome10+,Safari5.1+ */
-						background: -o-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Opera 11.10+ */
-						background: -ms-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* IE10+ */
-						background: linear-gradient(to bottom,  #ff3300 1%,#cc0000 100%); /* W3C */
-						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3300', endColorstr='#cc0000',GradientType=0 ); /* IE6-8 */
+					/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+					background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmMzMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYzAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+					background: -moz-linear-gradient(top,  #ff3300 1%, #cc0000 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ff3300), color-stop(100%,#cc0000)); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top,  #ff3300 1%,#cc0000 100%); /* IE10+ */
+					background: linear-gradient(to bottom,  #ff3300 1%,#cc0000 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3300', endColorstr='#cc0000',GradientType=0 ); /* IE6-8 */
 				}
 			}
 		}
@@ -232,7 +267,7 @@ html{
 			background:url("https://at.avanade.com/sites/CustomerRecordsManagement/Style Library/css/images/bg.png") #EFEFEF repeat-x scroll top right; border-bottom:1px solid #ddd;
 			text-shadow: none !important;
 			color:$dark;						
-			p{font-family:$segoe; font-size:12px;}
+			p{font-family:$segoe; font-size:13px;}
 			ul{
 				font-family:$segoe; margin-left: 2.5%;font-size:12px;font-family:$segoe; list-style-type: disc;
 				ul{ maring-left:2em; margin-top: 1em;}
@@ -321,8 +356,10 @@ html{
 					padding:0px;
 					margin:0px;
 					width: 100%;
+					list-style-type: none;
 					li{
 						width: 100%;
+						list-style-type: none;
 						img{
 							width: 100% !important;
 						}
@@ -614,6 +651,8 @@ html{
 		}
 	}	
 }
+
+
 
 
 
