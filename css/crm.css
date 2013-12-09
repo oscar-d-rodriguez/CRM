@@ -233,6 +233,24 @@ html body .Exceptions h2 a:before {
   text-decoration: none !important;
   top: 4px;
 }
+html body .GenericLayout .RC-controls {
+  text-align: right;
+  margin-right: 4%;
+}
+html body .GenericLayout .RC-controls a {
+  margin-left: 25px;
+  display: inline-block;
+  min-height: 26px;
+  padding: 6px 0 6px 35px;
+  font-weight: 600 !important;
+  color: #666 !important;
+}
+html body .GenericLayout .RC-controls a.calendar-icon {
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/calendar-icon.png") no-repeat left;
+}
+html body .GenericLayout .RC-controls a.important-icon {
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/important-icon.png") no-repeat left;
+}
 html body .GenericLayout .record-clasification-wrapper .ms-wpContentDivSpace {
   border-left: solid 2px  #CF0072;
   padding-left: 15px;
@@ -241,7 +259,7 @@ html body .GenericLayout .et-tabrow {
   overflow: hidden;
 }
 html body .GenericLayout .et-tab {
-  background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat scroll right -107px rgba(0, 0, 0, 0);
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat scroll right -107px rgba(0, 0, 0, 0);
   border: 0 none;
   color: #FFFFFF;
   display: block;
@@ -279,7 +297,7 @@ html body .GenericLayout .et-activetab:before {
   top: 0;
   width: 36px;
   z-index: 10;
-  background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px;
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px;
 }
 html body .GenericLayout .et-tabrow span + span + span + span + span + span {
   background-position: right -428px  !important;
@@ -398,6 +416,7 @@ html body .RolesResponsabilities .the-tabs a.pdf {
   /* IE6-8 */
 }
 html body .rm-layout {
+  font-size: 13px;
   background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style Library/css/images/bg.png") #efefef repeat-x scroll top right;
   border-bottom: 1px solid #ddd;
   text-shadow: none !important;
@@ -427,6 +446,10 @@ html body .rm-layout * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
+html body .rm-layout .ms-WPBody {
+  font-size: 13px;
+  font-family: Segoe UI;
+}
 html body .rm-layout p {
   font-family: Segoe UI, Helvetica, Arial !important;
   font-size: 13px;
@@ -444,6 +467,9 @@ html body .rm-layout ul ul {
   margin-left: 2em;
   margin-top: 1em;
 }
+html body .rm-layout .ms-rteStyle-Comment {
+  text-shadow: none !important;
+}
 html body .rm-layout a:link,
 html body .rm-layout a:visited,
 html body .rm-layout a:hover {
@@ -460,14 +486,14 @@ html body .rm-layout h1 {
 html body .rm-layout h2 {
   font-family: Segoe UI, Helvetica, Arial !important;
   color: #333333;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   margin: 10px 0 20px;
 }
 html body .rm-layout h3 {
   font-family: Segoe UI, Helvetica, Arial !important;
   color: #858585;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   margin: 20px 0 5px;
 }
@@ -475,7 +501,7 @@ html body .rm-layout h4,
 html body .rm-layout h5,
 html body .rm-layout h6 {
   font-family: Segoe UI, Helvetica, Arial !important;
-  font-size: 12px;
+  font-size: 13px;
 }
 html body .rm-layout hr {
   background: #E2E2E2;
@@ -491,6 +517,35 @@ html body .rm-layout .content-information {
   box-shadow: 0 0 4px #CCCCCC;
   background-color: #ffffff;
   min-height: 600px;
+  /*Table Style*/
+}
+html body .rm-layout .content-information .ms-rteTable-default {
+  border: 0 none !important;
+}
+html body .rm-layout .content-information .ms-rteTable-default border-collapse:collapse
+tr th {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 0 none;
+  font-family: "Segoe UI", Arial, Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+html body .rm-layout .content-information .ms-rteTable-default border-collapse:collapse
+tr td {
+  padding: 10px;
+  border: 0 none;
+  border-bottom: 1px solid #E2E2E2;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Sans-serif;
+}
+html body .rm-layout .content-information .ms-rteTable-default border-collapse:collapse
+tr th.ms-rteTableFirstCol-default {
+  background-color: #AEEFFF;
+  color: #666;
+  border-bottom: 1px solid #E2E2E2;
+  font-size: 12px;
 }
 html body .rm-layout .side-bar {
   width: 25%;

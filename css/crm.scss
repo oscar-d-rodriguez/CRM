@@ -173,6 +173,24 @@ html{
 			h2 a:before{content: "^"; font-family: verdana; font-size: 15px; padding-right: 4px; position: relative; text-decoration: none !important; top: 4px;}						
 		}
 		.GenericLayout{
+			.RC-controls{
+				text-align: right;
+				margin-right: 4%;
+				a{
+					margin-left: 25px;
+					display: inline-block;
+					min-height: 26px;
+					padding:6px 0 6px 35px;
+					font-weight: 600 !important;
+					color: #666 !important;
+				}
+				a.calendar-icon{
+					background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/calendar-icon.png") no-repeat left;
+				}
+				a.important-icon{
+					background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/important-icon.png") no-repeat left;
+				}
+			}
 			.record-clasification-wrapper .ms-wpContentDivSpace{
 				border-left:solid 2px  #CF0072; 			
 				padding-left:15px
@@ -181,7 +199,7 @@ html{
 				overflow: hidden
 			}
 			.et-tab {
-			    background: url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat scroll right -107px rgba(0, 0, 0, 0);
+			    background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat scroll right -107px rgba(0, 0, 0, 0);
 			    border: 0 none;
 			    color: #FFFFFF;
 			    display: block;
@@ -216,7 +234,7 @@ html{
 			    top: 0;
 			    width: 36px;
 			    z-index: 10;
-			    background:url("/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px; 
+			    background:url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/css/images/tabs.png") no-repeat transparent scroll right -214px; 
 			}
 			.et-tabrow span + span + span + span + span + span { 
 			    background-position: right -428px  !important;
@@ -339,9 +357,14 @@ html{
 				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 				box-sizing: border-box;box-sizing: border-box;         /* Opera/IE 8+ */		 
 			}
+			font-size: 13px;
 			background:url("https://at.avanade.com/sites/CustomerRecordsManagement/Style Library/css/images/bg.png") #EFEFEF repeat-x scroll top right; border-bottom:1px solid #ddd;
 			text-shadow: none !important;
-			color:$dark;						
+			color:$dark;		
+			.ms-WPBody{
+				font-size: 13px;
+				font-family: Segoe UI;
+			}				
 			p{font-family:$segoe; font-size:13px;}
 			ul{
 				font-family:$segoe; 
@@ -356,15 +379,18 @@ html{
 					margin-top: 1em;
 				}
 			}
+			.ms-rteStyle-Comment{
+				text-shadow: none !important;
+			}
 		    a:link, 
 		    a:visited,
 		    a:hover{font-family:$segoe; color:#009FD8; font-weight:400}
 		    h1{font-family:$segoe; color:#46464A; font-size: 22px; font-weight:400;}
-		    h2{font-family:$segoe; color:#333333; font-size: 15px; font-weight:normal; margin: 10px 0 20px;}
-		    h3{font-family:$segoe; color:$dark; font-size: 12px; font-weight: bold; margin: 20px 0 5px;}
+		    h2{font-family:$segoe; color:#333333; font-size: 16px; font-weight:normal; margin: 10px 0 20px;}
+		    h3{font-family:$segoe; color:$dark;   font-size: 14px; font-weight: bold; margin: 20px 0 5px;}
 		    h4,		  
 			h5,
-			h6{font-family:$segoe; font-size: 12px;}			
+			h6{font-family:$segoe; font-size: 13px;}			
 			hr{background: #E2E2E2; display: block; height: 1px; margin: 4% 0; width: 100%;}	
 			.content-information{
 				width: 75%;
@@ -372,6 +398,16 @@ html{
 				padding: 20px 20px;
 				box-shadow: 0 0 4px #CCCCCC; 
 				background-color:#ffffff; min-height: 600px;
+				/*Table Style*/
+				.ms-rteTable-default{
+					border:0 none !important; 
+					border-collapse:collapse
+					tr {
+						th{padding:10px;	background-color:#333; color:#fff; border:0 none; font-family:"Segoe UI", Arial, Sans-serif; font-size:14px; font-weight:600}
+						td{padding:10px; border:0 none; border-bottom:1px solid #E2E2E2; font-size:12px;	font-family:"Segoe UI", Arial, Sans-serif; }
+						th.ms-rteTableFirstCol-default{ background-color:#AEEFFF; color:#666; border-bottom:1px solid #E2E2E2; font-size:12px;}
+					}
+				}
 			}
 
 			/******************************************************************************                                                                           
