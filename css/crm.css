@@ -22,19 +22,26 @@ html body {
    0.2 	L A Y O U T 
   *******************************************************************************/
 }
+html body .left-menu-custom ul {
+  margin-left: 0px;
+}
 html body .left-menu-custom ul li {
   line-height: 2;
   list-style-type: none;
+  margin-left: 10px;
+  position: relative;
 }
-html body .left-menu-custom ul li a {
+html body .left-menu-custom ul a {
   color: #009FD8 !important;
   text-decoration: none !important;
 }
-html body .left-menu-custom ul li a .menu-item-text:before {
+html body .left-menu-custom ul a .menu-item-text:before {
   content: "> ";
   text-decoration: none !important;
+  left: -14px;
+  position: absolute;
 }
-html body .left-menu-custom ul li:hover {
+html body .left-menu-custom ul:hover {
   color: #00719b !important;
 }
 html body #outer-table thead {
@@ -94,7 +101,7 @@ html body table#outer-table {
 html body table#inner-table {
   width: 100%;
 }
-html body .HomeLayout h2 {
+html body .HomeLayout .content-information h2 {
   text-align: center;
 }
 html body .SupportResources .tiles a, html body .SupportResources .tiles p {
@@ -107,12 +114,45 @@ html body .Exceptions .exception-diagram {
   overflow: hidden;
   -moz-box-sizing: border-box;
   margin-bottom: 4em;
+  /*
+  li:nth-of-type(2), 
+  li:first-child + li {opacity:0.9; filter: alpha(opacity=95);}
+  li:nth-of-type(3), 
+  li:first-child + li + li{opacity:0.8; filter: alpha(opacity=90);}
+  li:nth-of-type(4), 
+  li:first-child + li + li + li{opacity:0.7; filter: alpha(opacity=85);}
+  li:nth-of-type(5), 
+  li:first-child + li + li + li + li{opacity:0.60; filter: alpha(opacity=80);}
+  */
+  /*
+  li:before{
+  	border-left: 7px solid rgba(0, 0, 0, 0); 
+  	border-right: 7px solid rgba(0, 0, 0, 0); 
+  	border-top: 7px solid #32384D; 
+  	bottom: -7px; content: ""; 
+  	display: block;
+  	height: 0; 
+  	left: 49%; 
+  	margin: 0 auto; 
+  	opacity: 1 !important;
+  	filter: alpha(opacity=100) !important;
+  	position: absolute; 
+  	width: 0; 
+  	z-index: 10; 
+  	opacity:inherit;
+  }
+  li:nth-of-type(2)::before{border-top-color:#4C628B !important}
+  li:nth-of-type(3)::before{border-top-color:#61759D !important}
+  li:nth-of-type(4)::before{border-top-color:#648FB0 !important}
+  li:nth-of-type(5)::before{border-top-color:#2A6693 !important}			
+  */
 }
 html body .Exceptions .exception-diagram ul {
   display: table !important;
   margin: 0 !important;
   overflow: visible;
   padding: 0;
+  max-width: 100%;
 }
 html body .Exceptions .exception-diagram li {
   display: table;
@@ -126,44 +166,8 @@ html body .Exceptions .exception-diagram li {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  background: #009fda;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOWZkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDhkYzQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #009fda 0%, #008dc4 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #009fda), color-stop(100%, #008dc4));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #009fda 0%, #008dc4 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #009fda 0%, #008dc4 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #009fda 0%, #008dc4 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #009fda 0%, #008dc4 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009fda', endColorstr='#008dc4',GradientType=0 );
-  /* IE6-8 */
-}
-html body .Exceptions .exception-diagram li:nth-of-type(2),
-html body .Exceptions .exception-diagram li:first-child + li {
-  opacity: 0.9;
-  filter: alpha(opacity=95);
-}
-html body .Exceptions .exception-diagram li:nth-of-type(3),
-html body .Exceptions .exception-diagram li:first-child + li + li {
-  opacity: 0.8;
-  filter: alpha(opacity=90);
-}
-html body .Exceptions .exception-diagram li:nth-of-type(4),
-html body .Exceptions .exception-diagram li:first-child + li + li + li {
-  opacity: 0.7;
-  filter: alpha(opacity=85);
-}
-html body .Exceptions .exception-diagram li:nth-of-type(5),
-html body .Exceptions .exception-diagram li:first-child + li + li + li + li {
-  opacity: 0.60;
-  filter: alpha(opacity=80);
+  background: #32384D;
+  border-right: 3px solid #FFFFFF;
 }
 html body .Exceptions .exception-diagram li a,
 html body .Exceptions .exception-diagram li a:link,
@@ -176,11 +180,21 @@ html body .Exceptions .exception-diagram li a:hover {
   font-weight: bold;
   width: 100%;
 }
-html body .Exceptions .exception-diagram li:after {
-  border-left: 7px solid rgba(0, 0, 0, 0);
-  border-right: 7px solid rgba(0, 0, 0, 0);
-  border-top: 7px solid #008dc4;
-  bottom: -7px;
+html body .Exceptions .exception-diagram li.last {
+  display: block;
+  background-color: #22486A;
+  position: relative;
+  z-index: 0;
+  height: auto;
+  padding: 20px !important;
+  width: 100%;
+  margin-top: 22px;
+}
+html body .Exceptions .exception-diagram li.last:before {
+  border-left: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid rgba(0, 0, 0, 0);
+  border-top: 15px solid #32384D;
+  top: -18px;
   content: "";
   display: block;
   height: 0;
@@ -192,27 +206,6 @@ html body .Exceptions .exception-diagram li:after {
   width: 0;
   z-index: 10;
   opacity: inherit;
-}
-html body .Exceptions .exception-diagram li:nth-of-type(2)::after {
-  border-top-color: #1A98CA !important;
-}
-html body .Exceptions .exception-diagram li:nth-of-type(3)::after {
-  border-top-color: #33A4D0 !important;
-}
-html body .Exceptions .exception-diagram li:nth-of-type(4)::after {
-  border-top-color: #4DAFD6 !important;
-}
-html body .Exceptions .exception-diagram li:nth-of-type(5)::after {
-  border-top-color: #66BFE2 !important;
-}
-html body .Exceptions .exception-diagram li.last {
-  display: block;
-  background-color: #0067C6;
-  position: relative;
-  z-index: 0;
-  height: auto;
-  padding: 20px !important;
-  width: 100%;
 }
 html body .Exceptions h2 a {
   float: right;
@@ -306,7 +299,7 @@ html body .GenericLayout .et-tabrow span + span + span + span + span + span.et-a
   background-position: right 0px  !important;
 }
 html body .RolesResponsabilities .responsabilities-chart {
-  margin: 4% 0 8%;
+  margin: 1% 0 8%;
   min-height: 253px;
   position: relative;
 }
@@ -360,6 +353,9 @@ html body .RolesResponsabilities .the-tabs .ie-links li {
 html body .RolesResponsabilities .the-tabs ul {
   margin-left: 1%;
 }
+html body .RolesResponsabilities .the-tabs ul ul {
+  margin-left: 6%;
+}
 html body .RolesResponsabilities .the-tabs input[type="checkbox"], html body .RolesResponsabilities .the-tabs input[type="radio"] {
   float: left;
   height: 20px;
@@ -377,6 +373,9 @@ html body .RolesResponsabilities .the-tabs li {
   margin-bottom: 5px;
   list-style-type: none;
   clear: both;
+}
+html body .RolesResponsabilities .the-tabs li li {
+  list-style-type: disc;
 }
 html body .RolesResponsabilities .the-tabs a.pdf:after {
   content: "";
@@ -464,8 +463,11 @@ html body .rm-layout ul {
   font-size: 13px;
 }
 html body .rm-layout ul ul {
-  margin-left: 2em;
+  margin-bottom: 1em;
   margin-top: 1em;
+}
+html body .rm-layout ul ul li {
+  list-style-type: circle;
 }
 html body .rm-layout .ms-rteStyle-Comment {
   text-shadow: none !important;
@@ -547,10 +549,38 @@ tr th.ms-rteTableFirstCol-default {
   border-bottom: 1px solid #E2E2E2;
   font-size: 12px;
 }
+html body .rm-layout .side-bar ul.root {
+  /*
+  li:nth-child(6), li:nth-child(7), li:nth-child(8), li:nth-child(9), li:nth-child(10){
+  	display: none;
+  }*/
+}
 html body .rm-layout .side-bar {
   width: 25%;
   float: right;
   padding: 0;
+}
+html body .rm-layout .side-bar a.static.menu-item:hover {
+  text-decoration: underline !important;
+}
+html body .rm-layout .side-bar ul {
+  margin-left: 0px;
+}
+html body .rm-layout .side-bar ul li {
+  margin-left: 0px;
+  list-style-type: none;
+}
+html body .rm-layout .side-bar ul li li {
+  margin-left: 6%;
+}
+html body .rm-layout .side-bar .left-menu-custom span.static.menu-item {
+  border-bottom: 1px solid #DEDEDE;
+  color: #46464A;
+  font-family: Segoe UI, Helvetica, Arial !important;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 5px 0 10px;
+  padding-bottom: 14px;
 }
 html body .rm-layout .side-bar .banner-sidebar {
   margin-top: 20px;
@@ -606,6 +636,8 @@ html body .rm-layout .side-bar .subcol-inner {
 html body .rm-layout .slider {
   margin: 4% 0;
   position: relative;
+  min-height: 311px;
+  overflow: hidden;
 }
 html body .rm-layout .slider ul.dfwp-column.dfwp-list {
   padding: 0px;
@@ -624,6 +656,7 @@ html body .rm-layout .slider .description {
   background-color: rgba(207, 0, 114, 0.9);
   color: #FFFFFF;
   height: 85%;
+  height: auto;
   left: 3%;
   padding: 5% 3% 3%;
   position: absolute;
@@ -680,8 +713,8 @@ html body .rm-layout .tiles {
   margin-bottom: 4%;
   color: white;
 }
-html body .rm-layout .tiles div div {
-  word-break: break-all;
+html body .rm-layout .tiles .dfwp-list div.item {
+  overflow: visible !important;
 }
 html body .rm-layout .tiles div div a {
   line-height: 1em;
@@ -762,6 +795,39 @@ html body .rm-layout .tiles .green img[id^="MSOImageWebPart"] {
 }
 html body .rm-layout .bottom-content {
   position: relative;
+  margin-bottom: 4em;
+}
+html body .rm-layout .bottom-content .types-of-documents .dfwp-list div.item {
+  overflow: visible !important;
+}
+html body .rm-layout .bottom-content .types-of-documents .groupheader {
+  display: none;
+}
+html body .rm-layout .bottom-content .types-of-documents .dfwp-list {
+  margin: 0px;
+  padding: 0px;
+  background: url("https://at.avanade.com/sites/CustomerRecordsManagement/Style%20Library/img/home-tabs-back.png") right center;
+  overflow: hidden;
+  clear: both;
+}
+html body .rm-layout .bottom-content .types-of-documents .dfwp-list li {
+  color: #FFFFFF;
+  float: left;
+  list-style: decimal outside none;
+  margin-left: 24px;
+  min-height: 108px;
+  padding: 20px 10px 0 0;
+  vertical-align: middle;
+  width: 98px;
+}
+html body .rm-layout .bottom-content .types-of-documents .dfwp-list li .item {
+  padding: 0px;
+  line-height: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+html body .rm-layout .bottom-content .types-of-documents .dfwp-list li .item a {
+  color: white;
 }
 html body .rm-layout .bottom-content .groupheader {
   text-align: center;
